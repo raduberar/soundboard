@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #777;
+}
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  
+}
+#drum-machine {
+  border: 5px solid goldenrod;
+  border-radius: 10px;
+  margin: 0 15px;
+  max-width: 900px;
+  background-color: plum;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  
+}
+#key-groups { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;  
+  width: 100%;
+}
+
+.drum-pad {
+  width: 100%;
+  height: 70px;
+}
+
+button {
+  font-size: 20px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+  border: 2px solid indigo;
+  background-color: darkviolet;
+
+}
+
+button, #vol-bar {
+  color: white;
+  cursor: pointer;
+}
+
+
+
+#display {
+  text-align: center;
+  color: white;
+  background-color: gray;
+  font-size: 22px;
+  width: 135px;
+  height: 25px;
+}
+.controale{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  
+  padding-bottom: 10px;
+}
+
+.drum-pad:hover, .drum-pad:active{
+  opacity: 0.7;
+}
+
+@media(min-width:700px) {
+  #drum-machine{
+  flex-direction: row;
+  }
+}
+footer div p{
+  text-align: center;
+}
+.author {
+  color: white;
+}
+
+.author span {
+  color: cyan
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
